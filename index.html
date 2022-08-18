@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="cover">
+            <div class="split left">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+
+                        <lottie-player class="lottie" src="https://assets9.lottiefiles.com/packages/lf20_aMwMlF.json"
+                            background="transparent" speed="0.6" loop autoplay></lottie-player>
+                        </lottie-player>
+                        <div class="centered"><img class="fade-img" src="images/fade-1.svg" alt="">
+                            <h2 class="tittle-slider">Change The quality <br>
+                                Of Your Life</h2>
+
+                            <p>We help our clients to achieve
+                                goals faster through design and <br> technological thinking.</p>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <lottie-player class="lottie" src="https://assets9.lottiefiles.com/packages/lf20_aMwMlF.json"
+                            background="transparent" speed="0.6" loop autoplay></lottie-player>
+                        </lottie-player>
+                        <!-- <lottie-player class="lottie" src="https://assets4.lottiefiles.com/packages/lf20_8edlac32.json"
+                        background="transparent" speed="0.3" loop autoplay>
+                    </lottie-player> -->
+                        <div class="centered"><img class="fade-img" src="images/fade-2.svg" alt="">
+                            <h2 class="tittle-slider">Easy To Navigate <br>
+                                And Earn Rewards</h2>
+
+                            <p>We help our clients to achieve
+                                goals faster through design and <br> technological thinking.</p>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <lottie-player class="lottie" src="https://assets9.lottiefiles.com/packages/lf20_aMwMlF.json"
+                            background="transparent" speed="0.6" loop autoplay></lottie-player>
+                        </lottie-player>
+                        <!-- <lottie-player class="lottie" src="https://assets4.lottiefiles.com/packages/lf20_8edlac32.json"
+                        background="transparent" speed="0.3" loop autoplay>
+                    </lottie-player> -->
+                        <div class="centered"><img class="fade-img" src="images/fade-3.svg" alt="">
+                            <h2 class="tittle-slider">New Scheduling And<br>
+                                Routing Options</h2>
+
+                            <p>We help our clients to achieve
+                                goals faster through design and <br> technological thinking.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+        <div class="split right">
+            <div class="login-section">
+                <div class="login-box">
+                    <img class="profile" src="images/profile.png" alt="">
+                    <h2>Hello Again!</h2>
+                    <p class="login-info">We help our clients to achieve
+                        goals faster through design and technological thinking.</p>
+                    <form>
+                        <div class="label-float">
+                            <input type="text" placeholder=" " />
+                            <label>Email</label>
+                        </div>
+
+                        <div class="label-float">
+                            <input type="password" placeholder=" " />
+                            <label>Password</label>
+                        </div>
+                        <div id="textbox">
+                            <label class="remember-me"><input type="checkbox"> Remember me</label>
+                            <p class="forgot-pass">Forgot Password</p>
+                        </div>
+
+                        <input type="checkbox" id="active">
+                        <label for="active" class="login-btn-label">Login</label>
+
+
+
+                        <div class="social-menu">
+                            <ul>
+                                <li><a href="#" target="blank"><i class="fab fa-github"></i></i></a></li>
+                                <li><a href="#" target="blank"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-codepen" target="blank"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="wrapper">
+                            <div class="successful">
+                                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_3b7dveda.json"
+                                    background="transparent" speed="1" style="width: 500px; height: 500px;" loop
+                                    autoplay></lottie-player>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3300); // Change image every 2 seconds
+        }
+
+    </script>
+
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

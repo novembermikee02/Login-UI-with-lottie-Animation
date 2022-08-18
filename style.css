@@ -1,0 +1,367 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.left {
+    background-color: #071A84;
+    width: 50%;
+    height: 100vh;
+    float: left;
+
+}
+
+.right {
+    /* background-color: red; */
+    width: 50%;
+    height: 100vh;
+    float: right;
+}
+
+.login-section {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    width: 400px;
+    /* height: 300vh; */
+    padding: 40px;
+    /* box-sizing: border-box; */
+    /* box-shadow: 0 15px 25px rgba(0, 0, 0, .6); */
+    /* border-radius: 10px; */
+}
+
+.profile {
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.login-box h2 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+}
+
+.login-info {
+    font-size: 10px;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+}
+
+.label-float input {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance: none;
+}
+
+.label-float input:focus {
+    border: 2px solid #3951b2;
+}
+
+.label-float input::placeholder {
+    color: transparent;
+}
+
+.label-float label {
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 15px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    background-color: white;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+.label-float input:required:invalid+label:before {
+    content: '*';
+}
+
+.label-float input:focus+label,
+.label-float input:not(:placeholder-shown)+label {
+    font-size: 13px;
+    top: 0;
+    color: #3951b2;
+}
+
+#textbox {
+    margin-top: 10px;
+}
+
+.remember-me {
+    font-size: 10px;
+}
+
+.forgot-pass {
+    float: right;
+    font-size: 10px;
+    margin-top: 7px;
+}
+
+
+.login-btn {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #071A84;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+@media (max-width: 730px) {
+    .left {
+        display: none;
+    }
+
+    .container .cover {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+
+
+/* Left Said */
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 400px; */
+    padding: 40px;
+    /* background-color: #753a88; */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+/* .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+} */
+
+
+.fade-img {
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.lottie {
+    width: 700px;
+    height: 400px;
+    margin-bottom: 50px;
+    margin-left: -20px;
+
+}
+
+.tittle-slider {
+    text-align: center;
+    margin-top: 30px;
+    /* color: white; */
+}
+
+.centered p {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+
+/* overlay animation ripple */
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(109.6deg, rgba(35, 11, 68, 1) 11.2%, rgba(45, 21, 76, 1) 91.1%);
+    clip-path: circle(0px at calc(100% - 45px) 45px);
+    transition: all 0.3s ease-in-out;
+}
+
+#active:checked~.wrapper {
+    clip-path: circle(75%);
+}
+
+
+.login-btn-label {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    /* background-color: #0093E9; */
+    background-image: linear-gradient(109.6deg, rgba(61, 245, 167, 1) 11.2%, rgba(9, 111, 224, 1) 91.1%);
+    /* background-image: linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%); */
+
+    color: #fff;
+    height: 40px;
+    border-radius: 5px;
+    line-height: 2.2em;
+}
+
+
+#active:checked~.menu-btn {
+    background: #fff;
+    color: #4158d0;
+}
+
+#active:checked~.menu-btn i:before {
+    content: "\f00d";
+}
+
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+
+
+/* social icon */
+.social-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.social-menu ul li {
+    list-style: none;
+}
+
+.social-menu ul li .fab {
+    font-size: 30px;
+    line-height: 50px;
+    transition: .3s;
+    color: #0093E9;
+}
+
+.social-menu ul li .fab:hover {
+    color: #fff;
+}
+
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+.social-menu ul li a:hover {
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #E4405F;
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #0077b5;
+}
+
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #000;
+}
+
+
+/* Successfully */
+
+.successful {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
